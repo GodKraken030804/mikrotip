@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            background-color: #F5DA83; /* Light Yellow */
+            color: #7A6C3C; /* Dark Brown */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+            background-color: #FFFFFF; /* White */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 95%;
+            padding: 10px;
+            border: 1px solid #CCC;
+            border-radius: 4px;
+        }
+        .btn-primary {
+            width: 100%;
+            padding: 10px;
+            background-color: #F5DA82; /* Light Yellow */
+            border: none;
+            color: #7A6C3C; /* Dark Brown */
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .btn-primary:hover {
+            background-color: #F4DB82; /* Slightly different Light Yellow */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <form method="POST">
+        <div class="form-group">
+            <label for="dst">Router IP:</label>
+            <input type="text" id="dst" name="dst" required>
+        </div>
+        <div class="form-group">
+            <label for="user">Username:</label>
+            <input type="text" id="user" name="user" required>
+        </div>
+        <div class="form-group">
+            <label for="passw">Password:</label>
+            <input type="password" id="passw" name="passw" required>
+        </div>
+        <div class="form-group">
+            <label for="port">Port:</label>
+            <input type="text" id="port" name="port" value="8728">
+        </div>
+        <button type="submit" class="btn-primary">Login</button>
+    </form>
+</div>
+
+</body>
+</html>
